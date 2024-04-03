@@ -7,6 +7,10 @@ android {
     namespace = "com.govaden.recordkeeper"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.govaden.recordkeeper"
         minSdk = 21
@@ -37,6 +41,7 @@ android {
 
 dependencies {
 
+    implementation("androidx.fragment:fragment-ktx:1.6.2")
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
